@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Put the overflow-y: scroll; so it doesn't look like the 
+*page shifts when going from a page that fits the browser
+*to a page that doesn't */
+html {
+	overflow-y: scroll;
+}
+body{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background: #535353 url('../images/bg_gradient.jpg') repeat-x;
+	line-height: 1.9em;
+	color: #EDE6E6;
+	margin: auto auto;
+	width: 100%;
+}
+
+/* Menu Navigation */
+nav {
+	top: 0;
+	background-color: #0F244C;
+	border-bottom: 2px solid purple;
+	margin: 0 0;
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+}
+nav ul {
+	float: right;
+	padding: 0 0;
+	margin-right: 240px;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+nav li {
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	text-decoration: none;
+}
+nav a:link {
+	display: block;
+	color: #F7FFA0;
+	width: 65px;
+	border-bottom: 3px solid red;
+}
+nav a:visited {
+	border-bottom: 3px solid yellow;
+	color: #F4F9B8;
+	text-decoration: none;
+}
+nav a:hover {
+	border-bottom: 3px solid green;
+	color: #7FEF82;
+	text-decoration: none;
+}
+nav a:active {
+	border-bottom: 3px solid orange;
+	color: purple;
+	text-decoration: none;
+}
+/* End of Menu Navigation */
+
+/* No <a> elements will be underlined */
+a {
+	text-decoration: none;
+}
+
+/* Header, Pong and page title */
+header{
+	width: 785px;
+	margin: 110px auto 1em auto;
+	position: relative;
+}
+header h1{
+	font-family:Impact, Verdana, Helvetica, sans-serif;
+	font-size: 50px;
+}
+header h2{
+	color: #26E029;
+}
+header a:visited, header a:active, header a:link, footer{
+	color: #F7FFA0;
+}
+header a:hover{
+	color: #7FEF82;
+}
+/* End of Header */
+
+#main{
+	margin: 55px auto;
+	top: 1.6em;
+	width: 785px;
+	min-height:100%;
+}
+
+/* This id was created so the footer of the support page would be at the bottom */
+#support_main{
+	margin: 55px auto 200px auto;
+	top: 1.6em;
+	width: 785px;
+	min-height:100%;
+}
+
+/* Contact Page */
+#contacts {
+	margin-bottom: 160px;
+}
+#contacts div {
+	margin-top: 40px;
+}
+#ccategory {
+	display: block;
+	width: 200px;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+	font-style: normal;
+	font-weight: bold;
+}
+#add_line {
+	margin-top: -20px;
+	margin-left: 216px;
+}
+/* End of Contact Page */
+
+footer {
+	width: 785px;
+	margin: 1em auto;
+	font-size: 11px;
+}
+
+/* Pictures on Main Page */
+#pong_pic, #phome1 {
+	border-radius: 10px;
+	margin: auto 210px;
+}
+#parcade1 {
+	border-radius: 10px;
+	float: left;
+	margin: auto 1em;
+}
+
+/* The Deal Page */
+#offer li {
+	color: #26E029;
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+	float: left;
+	list-style-type: none;
+	margin: 0 50px;
+}
+#offer img, #support_choice img{
+	border-radius: 10px;
+}
+#order_now {
+	font-family:"Arial Black", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	margin-top: 360px;
+}
+#order_now a:link {
+	color: #FF3571;
+}
+#order_now a:visited {
+	color: #F7FFA0;
+	text-decoration: none;
+}
+#order_now a:hover {
+	color: #7FEF82;
+	text-decoration: underline;
+}
+#order_now a:active {
+	color: #26E029;
+	text-decoration: underline;
+}
+/* End of The Deal Page */
+
+/*Pictures on Support Page */
+#support_choice img {
+	margin: 2em 2em 2em 2em;
+}
+
+/* Answers to the FAQs */
+#answers li {
+	border: 1px dashed #7FEF82;
+	padding: 1em 0 1em 2em;
+}
+
+/* Various link actions throughout the site */
+#faq_nav a:link, #atari_site:link, #contacts a:link {
+	color: #FF3571;
+}
+#faq_nav a:visited, #atari_site:visited, #contacts a:visited {
+	color: #F7FFA0;
+	text-decoration: none;
+}
+#faq_nav a:hover, #atari_site:hover, #contacts a:hover {
+	color: #7FEF82;
+	text-decoration: underline;
+}
+#faq_nav a:active , #atari_site:active, #contacts a:active {
+	color: #26E029;
+	text-decoration: underline;
+}
+#switch_support:link {
+	color: #F7FFA0;
+}
+#switch_support:visited {
+	color: #26E029;
+	text-decoration: none;
+}
+#switch_support:hover {
+	color: #7FEF82;
+	text-decoration: underline;
+}
+#switch_support:active {
+	color: #FF3571;
+	text-decoration: underline;
+}
+/* Various link actions throughout the site */
+
+/* Purchase Form */
+#required_info em{
+	color: red;
+	font-style: normal;
+}
+fieldset{
+	margin: 1em 0;
+}
+legend{
+	font-size: 75%;
+	text-transform: uppercase;
+}
+#edit_payment_info label {
+	font-size: 90%;
+}
+fieldset div{
+	margin-bottom: 0.5em;
+}
+div label{
+	display: block;
+	width: 200px;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+fieldset fieldset label {
+	display: inline;
+	width: auto;
+	float: none;
+	text-align: left;
+	padding-right: auto;
+}
+#informed label {
+	display: inline;
+	width: auto;
+	float: none;
+	text-align: left;
+	padding-right: auto;
+}
+label.required:before{
+	color: red;
+	content: "* ";
+}
+/*label.error {
+	color: red;
+	float: right;
+}*/
+label img{
+	vertical-align: middle;
+}
+input[type=submit] {
+	float: left;
+}
+/* End of Purchase Form */
